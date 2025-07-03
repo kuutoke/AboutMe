@@ -3,19 +3,27 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>About Ruby</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>kuutoke | Ruby Singer</title>
     <link
     href=“https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css”
     rel=“stylesheet”
     integrity=“sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr”
     crossorigin=“anonymous”>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -24,11 +32,68 @@
         <a href="#">upgrade your browser</a> to improve your experience.
       </p>
     <![endif]-->
+    <div class="container">
+      <!-- image goes here....or this is a transparent overlay that shows img underneath-->
+    </div>
+    <div class="container">
+      <div class="col-md-8">
+        <h1>kuutoke</h1></div>
+        <h2>aka Ruby Singer</h2></div>
+        <p>
+          San Francisco-based computer enthusiast. Communicates with the world
+          with visual arts and creative writing, via the lenses of psychology
+          and computer science. Here you can find examples of this, from the
+          visual gallery to the technical accolades.
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">Navigation ☰</button>
+      </div>
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <p class="warning">   Functionality coming soon.</p>
+        <a href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="#"><i class="fa fa-fw fa-wrench"></i> CV</a>
+        <a href="#"><i class="fa fa-fw fa-user"></i> Gallery</a>
+        <a href="#"><i class="fa fa-fw fa-user"></i> Projects List</a>
+        <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+      </div>
+    </div>
+    <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
 
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
+    <script
+      async
+      src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/esm/popper.min.js",
+          "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.esm.min.js"
+        }
+      }
+    </script>
+    <script type="module">
+      import * as bootstrap from "bootstrap";
+
+      new bootstrap.Popover(document.getElementById("popoverButton"));
+    </script>
   </body>
 </html>
