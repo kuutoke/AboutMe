@@ -6,84 +6,41 @@ body {
   background-color: #818181;
 }
 
-h1 h2 {
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke: 1px;
+.flex-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+}
+
+.navbtn {
+  background-color: #c4c4c4;
+  border: 2px;
+  border-radius: 5px;
 }
 
 .fa-fw {
-  position: static;
-  left: 0px;
-  font-size: 36px;
-  margin-right: 0px;
 }
 
-.warning {
-  color: #f1f1f1;
-}
-
-/* adding test css to navbar.*/
-
-/* Everything seems to be working mostly ok, but there isn't text wrapping ever since navbar moved to right. open navbar button also transitions to the right instead of left?*/
-
-.sidebar {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  background-color: #111;
-  overflow-x: clip;
-  transition: 0.5s;
-  padding-top: 20px;
-}
-
-.sidebar a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: grid;
-  transition: 0.3s;
-}
-
-.sidebar a:hover {
-  color: #f1f1f1;
-}
-
-.sidebar .closebtn {
-  position: relative;
-  top: 0px;
-  left: 0px;
-  font-size: 36px;
-  margin-left: 0px;
-}
-
-.openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #111;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-}
-
-.openbtn:hover {
-  background-color: #444;
-}
-
-#main {
-  transition: margin-left 0.5s;
-  padding: 16px;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidebar {
-    padding-top: 15px;
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
   }
-  .sidebar a {
-    font-size: 18px;
-  }
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 50px;
+}
+
+.c-img {
+}
+
+.c-txt {
+  margin: 5px;
+  align-self: left;
+}
+
+img {
+  max-width: 75%;
 }

@@ -7,7 +7,6 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>About Ruby</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>kuutoke | Ruby Singer</title>
@@ -17,7 +16,10 @@
     integrity=“sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr”
     crossorigin=“anonymous”>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -32,46 +34,54 @@
         <a href="#">upgrade your browser</a> to improve your experience.
       </p>
     <![endif]-->
-    <div class="container">
-      <!-- image goes here....or this is a transparent overlay that shows img underneath-->
-    </div>
-    <div class="container">
-      <div class="col-md-8">
-        <h1>kuutoke</h1></div>
-        <h2>aka Ruby Singer</h2></div>
-        <p>
-          San Francisco-based computer enthusiast. Communicates with the world
-          with visual arts and creative writing, via the lenses of psychology
-          and computer science. Here you can find examples of this, from the
-          visual gallery to the technical accolades.
-        </p>
+    <header>
+      <div class="flex-container" id="navbar">
+        <div class="navbtn">
+          <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+        </div>
+        <div class="navbtn">
+          <a href="certs.html"
+            ><i class="fa fa-fw fa-wrench"></i> CV [Coming Soon]</a
+          >
+        </div>
+        <div class="navbtn">
+          <a href="gallery.html"
+            ><i class="fa fa-fw fa-user"></i> Gallery [Coming Soon]</a
+          >
+        </div>
+        <div class="navbtn">
+          <a href="work.html"
+            ><i class="fa fa-fw fa-user"></i> Projects List [Coming Soon]</a
+          >
+        </div>
+        <div class="navbtn">
+          <a href="contact.html"
+            ><i class="fa fa-fw fa-envelope"></i> Contact</a
+          >
+        </div>
       </div>
-    </div>
-    <div class="container">
-      <div id="main">
-        <button class="openbtn" onclick="openNav()">Navigation ☰</button>
+    </header>
+    <main>
+      <div class="flex-container">
+        <div class="column c-img">
+          <img
+            src="/images/me_standing.jpg"
+            alt="Image of developer Ruby standing in
+          front of a metal detector at Alcatraz."
+          />
+        </div>
+        <div class="column c-txt">
+          <h1>kuutoke</h1>
+          <h2>aka Ruby Singer</h2>
+          <p>
+            San Francisco-based computer enthusiast. Communicates with the world
+            with visual arts and creative writing, via the lenses of psychology
+            and computer science. Here you can find examples of this, from the
+            visual gallery to the technical accolades.
+          </p>
+        </div>
       </div>
-      <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <p class="warning">   Functionality coming soon.</p>
-        <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
-        <a href="certs.html"><i class="fa fa-fw fa-wrench"></i> CV [Coming Soon]</a>
-        <a href="gallery.html"><i class="fa fa-fw fa-user"></i> Gallery [Coming Soon]</a>
-        <a href="work.html"><i class="fa fa-fw fa-user"></i> Projects List [Coming Soon]</a>
-        <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
-      </div>
-    </div>
-    <script>
-    function openNav() {
-      document.getElementById("mySidebar").style.width = "250px";
-      document.getElementById("main").style.marginLeft = "250px";
-    }
-
-    function closeNav() {
-      document.getElementById("mySidebar").style.width = "0";
-      document.getElementById("main").style.marginLeft= "0";
-    }
-    </script>
+    </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
