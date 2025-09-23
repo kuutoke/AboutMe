@@ -1,1 +1,1 @@
-biography for devmission
+About Me website created for Dev/Mission's Registered Pre-Apprenticeship program. First time using HTML and CSS. Currently one basic homepage but I have plans to make it a hub for my other online projects.
